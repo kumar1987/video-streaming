@@ -3,10 +3,3 @@ gst-launch -e flutsmux name="muxer" ! filesink location=multi.ts \
    videotestsrc ! video/x-raw-yuv, framerate=10/1, width=640, height=480 ! x264enc ! muxer. \
    pulsesrc ! audioconvert ! lamemp3enc target=1 bitrate=64 cbr=true ! muxer.
 
-
-
-
-
-
-
-http://wiki.oz9aec.net/index.php/Gstreamer_cheat_sheet
